@@ -1,21 +1,20 @@
 import { useState } from "react";
 
-// Coloque as três fotos em public/autores/ com estes nomes (ou ajuste os caminhos abaixo).
 const autores = [
   {
-    nome: "Seu Nome",
+    nome: "Rafael Souza De Almeida",
     papel: "Autor",
-    descricao: "Pesquisador e desenvolvedor do atlas.",
+    descricao: "Pesquisador e desenvolvedor do atlas digital.",
     foto: "/autores/autor.jpg",
   },
   {
-    nome: "Nome do Colega",
+    nome: "Lucas Lanzaro Reis",
     papel: "Autor",
-    descricao: "Pesquisador e coautor do atlas.",
+    descricao: "Pesquisador e coautor do atlas digital.",
     foto: "/autores/colega.jpg",
   },
   {
-    nome: "Nome do Coordenador",
+    nome: "Manoel Do Couto Fernandes",
     papel: "Coordenador",
     descricao: "Coordenação e orientação da pesquisa.",
     foto: "/autores/coordenador.jpg",
