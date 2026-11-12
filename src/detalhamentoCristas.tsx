@@ -28,7 +28,7 @@ export default function DetalhamentoCristas({
         const nova_posicao = motivacao.indexOf("(Turco)");
         const nova_motivacao = motivacao.slice(
           posicao + "(Grego)/".length,
-          nova_posicao
+          nova_posicao,
         );
         if (nova_motivacao.indexOf("(---)") !== -1) {
           return "(---)";
@@ -103,11 +103,11 @@ export default function DetalhamentoCristas({
                     position: "absolute",
                     top: Math.min(
                       Math.max(tooltip.y + 10, 10),
-                      window.innerHeight - 100
+                      window.innerHeight - 100,
                     ),
                     left: Math.min(
                       Math.max(tooltip.x + 10, 10),
-                      window.innerWidth - 220
+                      window.innerWidth - 220,
                     ),
                     maxWidth: "200px",
                     background: "#fff",

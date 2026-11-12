@@ -71,10 +71,10 @@ function ComunidadesTurcas({ turcasData, base_layer }: any) {
         d.properties.Mudou_ === "Não"
           ? "red"
           : d.properties.Mudou_ === "Parcialmente"
-          ? "rgba(255, 255, 102, 0.8)"
-          : d.properties.Mudou_ === "Sim"
-          ? "rgba(144, 238, 144, 0.8)"
-          : "rgba(169, 169, 169, 0.7)"
+            ? "rgba(255, 255, 102, 0.8)"
+            : d.properties.Mudou_ === "Sim"
+              ? "rgba(144, 238, 144, 0.8)"
+              : "rgba(169, 169, 169, 0.7)",
       )
 
       .attr("stroke", "#333")
@@ -100,10 +100,10 @@ function ComunidadesTurcas({ turcasData, base_layer }: any) {
               d.properties.Mudou_ === "Não"
                 ? "#ff6666"
                 : d.properties.Mudou_ === "Parcialmente"
-                ? "#ffcc00"
-                : d.properties.Mudou_ === "Sim"
-                ? "#228B22"
-                : "#333"
+                  ? "#ffcc00"
+                  : d.properties.Mudou_ === "Sim"
+                    ? "#228B22"
+                    : "#333",
             );
           })
           .on("mouseout", function () {
@@ -111,10 +111,10 @@ function ComunidadesTurcas({ turcasData, base_layer }: any) {
               d.properties.Mudou_ === "Não"
                 ? "red"
                 : d.properties.Mudou_ === "Parcialmente"
-                ? "rgba(255, 255, 102, 0.8)"
-                : d.properties.Mudou_ === "Sim"
-                ? "rgba(144, 238, 144, 0.8)"
-                : "rgba(169, 169, 169, 0.7)"
+                  ? "rgba(255, 255, 102, 0.8)"
+                  : d.properties.Mudou_ === "Sim"
+                    ? "rgba(144, 238, 144, 0.8)"
+                    : "rgba(169, 169, 169, 0.7)",
             );
             setTooltip((prev) => ({ ...prev, show: false }));
           })
